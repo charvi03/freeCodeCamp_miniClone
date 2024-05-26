@@ -12,7 +12,7 @@ const BodyContent = () => {
   const navigate = useNavigate();
 
   const handleGetStartedClick = () => {
-    navigate("/courses");
+    navigate("https://freecodecamp-miniclone.onrender.com/courses");
   };
   return (
     <div className="flex flex-col items-center justify-center h-screen">
