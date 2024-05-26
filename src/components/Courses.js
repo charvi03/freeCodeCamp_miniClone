@@ -15,7 +15,7 @@ function Courses() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/getcourses")
+      .get("https://freecodecamp-miniclone.onrender.com/getcourses")
       .then((response) => setCourses(response.data))
       .catch((err) => console.log(err));
   }, []);
