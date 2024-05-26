@@ -59,7 +59,7 @@ app.get(
       res.status(500).send("Error during authentication");
     } else {
       // Successful authentication, redirect with token
-      res.redirect(`http://localhost:3000?token=${req.user.token}`);
+      res.redirect(`https://freecodecamp-miniclone.onrender.com?token=${req.user.token}`);
     }
   }
 );
