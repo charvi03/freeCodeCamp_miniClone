@@ -13,7 +13,7 @@ function SignIn({ setIsLoggedIn }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:5000/api/signup", {
+      const response = await axios.post("/api/signup", {
         name,
         email,
         password,
@@ -37,7 +37,7 @@ function SignIn({ setIsLoggedIn }) {
 
   const handleGoogleLoginSuccess = async (response) => {
     try {
-      const result = await axios.post("http://localhost:5000/api/auth/google", {
+      const result = await axios.post("/api/auth/google", {
         token: response.credential,
       });
       console.log(result.data);
