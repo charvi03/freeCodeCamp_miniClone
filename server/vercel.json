@@ -1,0 +1,10 @@
+{
+    "version": 2,
+    "experimental": {
+      "serverlessFunctions": true
+    },
+    "builds": [
+      { "src": "/functions", "use": "@vercel/node", "config": { "framework": "framework" } }
+    ]
+  }
+  
