@@ -19,7 +19,7 @@ app.use(express.json());
 app.use(passport.initialize());
 
 // MongoDB connection
-mongoose.connect("mongodb://localhost:27017/signinApp", {
+mongoose.connect(process.env.MONGO_URL, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
