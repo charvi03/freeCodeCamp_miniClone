@@ -28,12 +28,12 @@ function Courses() {
   }, []);
 
   const spinnerStyle = {
-    border: "16px solid #f3f3f3",
-    borderTop: "16px solid #3498db",
+    border: "8px solid rgba(0, 0, 0, 0.1)", // Light gray border
+    borderTop: "8px solid black", // Black border on top
     borderRadius: "50%",
-    width: "120px",
-    height: "120px",
-    animation: "spin 2s linear infinite",
+    width: "60px",
+    height: "60px",
+    animation: "spin 1s linear infinite", // Faster spinning
   };
 
   const spinnerContainerStyle = {
